@@ -1,7 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <base href="https://zip-build-release.s3.ap-south-1.amazonaws.com/projects/25/releases/30/1.0.1/">
+    <base href="https://zip-build-release.s3.ap-south-1.amazonaws.com/projects/25/releases/30/1.0.2/">
+<script>
+  (function() {
+    var path = window.location.pathname;
+    if (!path.endsWith('index.html') && !path.endsWith('1.0.2/')) {
+      var parts = path.split('1.0.2/');
+      if (parts.length > 1) {
+        window.location.replace(window.location.origin + parts[0] + '1.0.2/index.html#/' + parts[1]);
+      }
+    }
+  })();
+</script><script>window.markerConfig={project:'68b6da8e7a78dd9ff9cff850'};... shim.js ...</script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,11 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <title>Corporation Profile - Configuration</title>
-  <script>
-            window.markerConfig = { project: '68b6da8e7a78dd9ff9cff850' };
-            !function(e,r,a){if(!e.__Marker){e.__Marker={};var t=[],n={__cs:t};["show","hide","isVisible","capture","cancelCapture","unload","reload","isExtensionInstalled","setReporter","clearReporter","setCustomData","on","off"].forEach(function(e){n[e]=function(){var r=Array.prototype.slice.call(arguments);r.unshift(e),t.push(r)}}),e.Marker=n;var s=r.createElement("script");s.async=1,s.src="https://edge.marker.io/latest/shim.js";var i=r.getElementsByTagName("script")[0];i.parentNode.insertBefore(s,i)}}(window,document);
-        </script>
-</head>
+  </head>
   <body>
 
 <style>
@@ -112,7 +119,7 @@
     let isLocked = false;
     let projectId = 25;
     let releaseId = 30;
-    let version = "1.0.1";
+    let version = "1.0.2";
     let projectName = "fourth release";
     let apiBase = "http://localhost:5000";
     let headerType = "release";
