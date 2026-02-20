@@ -1,27 +1,25 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <base href="https://zip-build-release.s3.ap-south-1.amazonaws.com/projects/25/releases/30/1.0.2/">
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+    <base href="https://zip-build-release.s3.ap-south-1.amazonaws.com/projects/25/releases/30/1.0.3/">
 <script>
   (function() {
     var path = window.location.pathname;
-    if (!path.endsWith('index.html') && !path.endsWith('1.0.2/')) {
-      var parts = path.split('1.0.2/');
+    if (!path.endsWith('index.html') && !path.endsWith('1.0.3/')) {
+      var parts = path.split('1.0.3/');
       if (parts.length > 1) {
-        window.location.replace(window.location.origin + parts[0] + '1.0.2/index.html#/' + parts[1]);
+        window.location.replace(window.location.origin + parts[0] + '1.0.3/index.html#/' + parts[1]);
       }
     }
   })();
 </script><script>window.markerConfig={project:'68b6da8e7a78dd9ff9cff850'};... shim.js ...</script>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <title>Corporation Profile - Configuration</title>
-  </head>
-  <body>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>OtterMon AI - Web UI/UX</title>
+    </head>
+
+    <body>
 
 <style>
   .zip-sync-header {
@@ -119,7 +117,7 @@
     let isLocked = false;
     let projectId = 25;
     let releaseId = 30;
-    let version = "1.0.2";
+    let version = "1.0.3";
     let projectName = "fourth release";
     let apiBase = "http://localhost:5000";
     let headerType = "release";
@@ -224,7 +222,8 @@
     init();
   })();
 </script>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+      <div id="root"></div>
+      <script type="module" src="/src/main.tsx"></script>
+    </body>
+  </html>
+  
